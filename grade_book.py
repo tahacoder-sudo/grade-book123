@@ -23,26 +23,21 @@ def show_grades():
     average = sum(marks) / len(marks)
     print(f"{name}: average {average:.1f}, grade {calculate_grade(average)}")
 
-
 def show_menu():
   print("\n=== Grade Book ===")
   print("1. Show grades")
   print("0. Exit")
 
 
-def main():
-  while True:
-    show_menu()
-    choice = input("Choose an option: ")
-    if choice == "0":
-      print("Goodbye!")
-      break
-    elif choice == "1":
-      show_grades()
-    else:
-      print("Invalid option.")
+# inside main():
+if choice == "0":
+  print("Goodbye!")
+  break
+elif choice == "1":
+  show_grades()
+else:
+  print("Invalid option.")
 
 
 if __name__ == "__main__":
   main()
-```[cite: 4, 7, 8]
